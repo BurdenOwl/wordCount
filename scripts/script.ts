@@ -4,7 +4,7 @@ const wordCount = (): void => {
     const inputElement = document.getElementById('inputValue') as HTMLInputElement | null;
     const inputValue : string = inputElement?.value || '';
     console.log(`Input Value: "${inputValue}"`);
-    count = inputValue.trim().split(/\s+/).length + 1;
+    count = inputValue.trim().split(/\s+/).length;
     if (inputValue == "") {
         count = 0;
     };

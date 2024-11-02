@@ -3,7 +3,7 @@ var wordCount = function () {
     var inputElement = document.getElementById('inputValue');
     var inputValue = (inputElement === null || inputElement === void 0 ? void 0 : inputElement.value) || '';
     console.log("Input Value: \"".concat(inputValue, "\""));
-    count = inputValue.trim().split(/\s+/).length + 1;
+    count = inputValue.trim().split(/\s+/).length;
     if (inputValue == "") {
         count = 0;
     }
