@@ -1,0 +1,16 @@
+#inputValue {
+    height: 500px; 
+    width: 100%; 
+    /* max-width: 500px; */
+    /* padding: 10px; */
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
