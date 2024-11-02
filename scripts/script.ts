@@ -15,7 +15,7 @@ const wordCount = (): void => {
     displayWords && (displayWords.innerHTML = `Current Word Count: ${count}`);
 
     const displaySentence = document.getElementById('sentenceDisplay') as HTMLElement | null;
-    displaySentence && (displaySentence.innerHTML = `Current Word Count: ${sentenceAmount}`);
+    displaySentence && (displaySentence.innerHTML = `Current Sentence Count: ${sentenceAmount}`);
 };
 
 wordCount();
