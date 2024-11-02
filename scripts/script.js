@@ -8,7 +8,10 @@ var wordCount = function () {
         count = 0;
     }
     ;
-    var display = document.getElementById('countDisplay');
-    display && (display.innerHTML = "Current Word Count: ".concat(count));
+    var sentenceAmount = (inputValue.match(/\./g) || []).length;
+    var displayWords = document.getElementById('countDisplay');
+    displayWords && (displayWords.innerHTML = "Current Word Count: ".concat(count));
+    var displaySentence = document.getElementById('sentenceDisplay');
+    displaySentence && (displaySentence.innerHTML = "Current Word Count: ".concat(sentenceAmount));
 };
 wordCount();

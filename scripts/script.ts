@@ -9,8 +9,13 @@ const wordCount = (): void => {
         count = 0;
     };
 
-    const display = document.getElementById('countDisplay') as HTMLElement | null;
-    display && (display.innerHTML = `Current Word Count: ${count}`);
+    const sentenceAmount : number = (inputValue.match(/\./g) || []).length;
+
+    const displayWords = document.getElementById('countDisplay') as HTMLElement | null;
+    displayWords && (displayWords.innerHTML = `Current Word Count: ${count}`);
+
+    const displaySentence = document.getElementById('sentenceDisplay') as HTMLElement | null;
+    displaySentence && (displaySentence.innerHTML = `Current Word Count: ${sentenceAmount}`);
 };
 
 wordCount();
